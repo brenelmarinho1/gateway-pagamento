@@ -17,7 +17,7 @@ func ConnectDB() error {
     defer cancel()
 
     // Define as opções de conexão
-    clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
+    clientOptions := options.Client().ApplyURI("mongodb+srv://brenelmarinho:ZS5IvoXxwrFT8oBA@cluster0.vd6vnoo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
     // Conecta ao servidor MongoDB
     var err error
