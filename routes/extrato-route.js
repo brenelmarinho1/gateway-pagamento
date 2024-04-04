@@ -23,7 +23,7 @@ router.post('/create', async (req, res) => {
 //getAllByUser Method
 router.get('/getAllByUser', async (req, res) => {
     try {
-        const data = await Model.find({ 'chave': req.body.user_id });
+        const data = await Model.find({ 'usuario': req.body.user_id });
         res.json(data)
     }
     catch (error) {
