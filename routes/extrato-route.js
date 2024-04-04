@@ -7,7 +7,8 @@ router.post('/create', async (req, res) => {
     const data = new Model({
         descricao: req.body.descricao,
         dataExtrato: req.body.data,
-        valor: req.body.valor
+        valor: req.body.valor,
+        usuario: req.body.usuario,
     })
 
     try {
