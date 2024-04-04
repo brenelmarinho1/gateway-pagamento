@@ -5,8 +5,9 @@ const router = express.Router();
 //Post Method
 router.post('/post', async (req, res) => {
     const data = new Model({
-        name: req.body.name,
-        age: req.body.age
+        descricao: req.body.descricao,
+        data: req.body.data,
+        valor: req.body.valor
     })
 
     try {
