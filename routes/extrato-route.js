@@ -6,7 +6,7 @@ const router = express.Router();
 router.post('/create', async (req, res) => {
     const data = new Model({
         descricao: req.body.descricao,
-        data: req.body.data,
+        dataExtrato: req.body.data,
         valor: req.body.valor
     })
 
