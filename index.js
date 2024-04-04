@@ -28,6 +28,6 @@ app.use('/api', routes)
 app.use('/contas', contas_routes)
 app.use('/login', login_routes)
 
-app.listen(3000, () => {
-    console.log(`Server Started at ${3000}`)
+app.listen(8080, () => {
+    console.log(`Server Started at ${8080}`)
 })
