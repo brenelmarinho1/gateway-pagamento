@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 
 //Post Method
 router.post('/criar-usuario', async (req, res) => {
-    console.log("O que chegou " + req.body);
+    console.log("O que chegou " + JSON.stringify(req.body));
     
     const data = new Model({
         email: req.body.email,
