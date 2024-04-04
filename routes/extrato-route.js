@@ -21,7 +21,7 @@ router.post('/create', async (req, res) => {
 })
 
 //getAllByUser Method
-router.get('/getAllByUser/:user_id'', async (req, res) => {
+router.get('/getAllByUser/:user_id', async (req, res) => {
     try {
         const data = await Model.find({ 'usuario': req.params.user_id });
         console.log("usuario informado " + req.query.user_id);
