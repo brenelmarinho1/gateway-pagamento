@@ -24,6 +24,7 @@ router.post('/create', async (req, res) => {
 router.get('/getAllByUser', async (req, res) => {
     try {
         const data = await Model.find({ 'usuario': req.body.user_id });
+        console.log("usuario informado " + req.body.user_id):
         res.json(data)
     }
     catch (error) {
