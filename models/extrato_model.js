@@ -12,6 +12,10 @@ const dataSchema = new mongoose.Schema({
     valor: {
         required: true,
         type: Number
+    },
+    usuario: {
+        required: true,
+        type: String
     }
   
 })
