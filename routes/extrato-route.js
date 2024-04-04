@@ -3,7 +3,7 @@ const Model = require('../models/extrato_model');
 const router = express.Router();
 
 //Post Method
-router.post('/post', async (req, res) => {
+router.post('/create', async (req, res) => {
     const data = new Model({
         descricao: req.body.descricao,
         data: req.body.data,
