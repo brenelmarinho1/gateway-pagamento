@@ -25,7 +25,7 @@ const contas_routes = require('./routes/contas-route');
 const login_routes = require('./routes/login-route');
 const extrato_routes = require('./routes/extrato-route');
 
-app.use('/api', routes)
+// app.use('/api', routes)
 app.use('/contas', contas_routes)
 app.use('/login', login_routes)
 app.use('/extratos', extrato_routes)
