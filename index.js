@@ -20,7 +20,7 @@ const app = express();
 app.use(cors())
 app.use(express.json());
 
-const routes = require('./routes/routes');
+// const routes = require('./routes/routes');
 const contas_routes = require('./routes/contas-route');
 const login_routes = require('./routes/login-route');
 const extrato_routes = require('./routes/extrato-route');
